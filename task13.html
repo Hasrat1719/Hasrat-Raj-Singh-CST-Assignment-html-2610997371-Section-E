@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Readers' Haven – Book Registration & Order Form</title>
+</head>
+<body>
+    <h2>Readers' Haven – Book Order Form</h2>
+    <form action="submit_order.php" target="_blank">
+        <input type="hidden" name="form_type" value="Readers Haven Book Order">
+        
+        <label for="cname">Customer Name:</label>
+        <input type="text" id="cname" name="cname" placeholder="Enter Full Name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="10-digit number" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+
+        <label for="ddate">Delivery Date:</label>
+        <input type="date" id="ddate" name="ddate"><br><br>
+
+        <label for="dtime">Preferred Delivery Time:</label>
+        <input type="time" id="dtime" name="dtime"><br><br>
+
+        <label for="category">Favorite Book Category:</label>
+        <select id="category" name="category" required>
+            <option value="">--Select Category--</option>
+            <option value="fiction">Fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="children">Children's Books</option>
+        </select><br><br>
+
+        <label for="btitle">Book Title:</label>
+        <input type="text" id="btitle" name="btitle" required><br><br>
+
+        <label for="qty">Quantity:</label>
+        <input type="number" id="qty" name="qty" min="1" value="1" required><br><br>
+
+        <label>Preferred Payment Method:</label>
+        <input type="radio" name="payment" id="cod" value="COD" required> <label for="cod">Cash on Delivery</label>
+        <input type="radio" name="payment" id="online" value="Online"> <label for="online">Online Payment</label><br><br>
+
+        <label>Additional Services:</label><br>
+        <input type="checkbox" name="services" id="gift" value="Gift Wrapping"> <label for="gift">Gift Wrapping</label><br>
+        <input type="checkbox" name="services" id="bookmark" value="Bookmark"> <label for="bookmark">Bookmark</label><br>
+        <input type="checkbox" name="services" id="express" value="Express Delivery"> <label for="express">Express Delivery</label><br>
+        <input type="checkbox" name="services" id="card" value="Greeting Card"> <label for="card">Greeting Card</label><br><br>
+
+        <label for="address">Delivery Address & Special Instructions:</label><br>
+        <textarea id="address" name="address" rows="5" cols="40" placeholder="Enter complete address and instructions..."></textarea><br><br>
+
+        <label for="ref">Upload Reference Image/Document:</label>
+        <input type="file" id="ref" name="ref" accept="image/*,.pdf"><br><br>
+
+        <button type="submit">Place Order</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
+</html>

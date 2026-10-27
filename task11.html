@@ -1,0 +1,198 @@
+<html>
+<head>
+    <title>Nested Tables</title>
+</head>
+<body>
+    <h2>1. Employee Salary Slip</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="60%">
+        <tr>
+            <td><b>Employee ID</b></td>
+            <td>EMP202</td>
+        </tr>
+        <tr>
+            <td><b>Employee Name</b></td>
+            <td>Pooja Sharma</td>
+        </tr>
+        <tr>
+            <td><b>Department</b></td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td><b>Designation</b></td>
+            <td>Accountant</td>
+        </tr>
+        <tr>
+            <td><b>Month</b></td>
+            <td>August 2025</td>
+        </tr>
+        <tr>
+            <td><b>Salary Details</b></td>
+            <td>
+                <!-- Nested Table -->
+                <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                    <tr>
+                        <th colspan="2">Earnings</th>
+                        <th colspan="2">Deductions</th>
+                    </tr>
+                    <tr>
+                        <th>Item</th><th>Amount</th>
+                        <th>Item</th><th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Basic Pay</td><td>₹28,000</td>
+                        <td>PF</td><td>₹2,000</td>
+                    </tr>
+                    <tr>
+                        <td>HRA</td><td>₹7,000</td>
+                        <td>Tax</td><td>₹1,800</td>
+                    </tr>
+                    <tr>
+                        <td>DA</td><td>₹4,000</td>
+                        <td>Loan</td><td>₹1,000</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total Earnings</b></td><td><b>₹39,000</b></td>
+                        <td><b>Total Deductions</b></td><td><b>₹4,800</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Net Salary</b></td>
+            <td><b>₹34,200</b></td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <h2>2. Student Profile & Marks</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="60%">
+        <tr>
+            <td><b>Student Name</b></td>
+            <td>[Your Name]</td>
+        </tr>
+        <tr>
+            <td><b>Roll Number</b></td>
+            <td>1023</td>
+        </tr>
+        <tr>
+            <td><b>Class</b></td>
+            <td>BCA - AI/ML (1st Year)</td>
+        </tr>
+        <tr>
+            <td><b>Details</b></td>
+            <td>
+                <!-- Nested Table -->
+                <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td align="center">88</td>
+                        <td align="center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td align="center">85</td>
+                        <td align="center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td align="center">92</td>
+                        <td align="center">A+</td>
+                    </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td align="center">95</td>
+                        <td align="center">A+</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <h2>3. Product Order Summary</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="60%">
+        <tr>
+            <td><b>Order ID</b></td>
+            <td>ORD4578</td>
+        </tr>
+        <tr>
+            <td><b>Customer Name</b></td>
+            <td>Amanpreet Kaur</td>
+        </tr>
+        <tr>
+            <td><b>Order Date</b></td>
+            <td>12-09-2025</td>
+        </tr>
+        <tr>
+            <td><b>Order Items</b></td>
+            <td>
+                <!-- Nested Table -->
+                <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                    <tr>
+                        <th>Product</th><th>Quantity</th><th>Price (₹)</th><th>Amount (₹)</th>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td><td align="center">1</td><td>45,000</td><td>45,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td><td align="center">1</td><td>1,200</td><td>1,200</td>
+                    </tr>
+                    <tr>
+                        <td>Backpack</td><td align="center">1</td><td>2,500</td><td>2,500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>Total Amount</b></td>
+                        <td><b>48,700</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <h2>4. Hotel Booking</h2>
+    <table border="1" cellpadding="8" cellspacing="0" width="60%">
+        <tr>
+            <td><b>Guest Name</b></td>
+            <td>Simran Kaur</td>
+        </tr>
+        <tr>
+            <td><b>Booking ID</b></td>
+            <td>HBK7890</td>
+        </tr>
+        <tr>
+            <td><b>Room Type</b></td>
+            <td>Deluxe Room</td>
+        </tr>
+        <tr>
+            <td><b>Booking Details</b></td>
+            <td>
+                <!-- Nested Table -->
+                <table border="1" cellpadding="5" cellspacing="0" width="100%">
+                    <tr>
+                        <th>Check-in Date</th>
+                        <th>Check-out Date</th>
+                        <th>Guests</th>
+                        <th>Charges (₹)</th>
+                    </tr>
+                    <tr>
+                        <td>15-10-2025</td>
+                        <td>18-10-2025</td>
+                        <td align="center">2</td>
+                        <td>7,500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right"><b>Total Charges</b></td>
+                        <td><b>7,500</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

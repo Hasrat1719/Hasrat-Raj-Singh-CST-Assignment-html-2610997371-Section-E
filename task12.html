@@ -1,0 +1,58 @@
+<html>
+<head><title>Online Course Registration</title></head>
+<body>
+    <h2>Course Registration for BCA-AI/ML Students</h2>
+    <form action="submit.php" target="_blank">
+        <input type="hidden" name="form_name" value="Online Course Registration">
+        
+        <label for="sname">Student Name:</label>
+        <input type="text" id="sname" name="sname" placeholder="Enter Full Name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="Male" required> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female"> <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="Other"> <label for="other">Other</label><br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" id="html" value="HTML"> <label for="html">HTML</label>
+        <input type="checkbox" name="skills" id="css" value="CSS"> <label for="css">CSS</label>
+        <input type="checkbox" name="skills" id="js" value="JavaScript"> <label for="js">JavaScript</label>
+        <input type="checkbox" name="skills" id="python" value="Python"> <label for="python">Python</label><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="webdev">Web Development</option>
+            <option value="python">Python Programming</option>
+            <option value="data">Data Analytics</option>
+            <option value="dm">Digital Marketing</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="time">Preferred Class Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="address">Address/Additional Information:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <label for="doc">Upload Document:</label>
+        <input type="file" id="doc" name="doc"><br><br>
+
+        <input type="submit" value="Submit Registration">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
